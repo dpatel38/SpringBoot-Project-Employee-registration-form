@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="css/display_form.css" />
+</head>
+<body>
+<h2>Result</h2>
+<table>
+    <tbody>
+    <tr>
+        <td><strong>ID:</strong></td>
+        <td><span th:text="${id}"></span></td>
+    </tr>
+    <tr>
+        <td><strong>First Name:</strong></td>
+        <td><span th:text="${firstName}"></span></td>
+    </tr>
+    <tr>
+        <td><strong>Last Name:</strong></td>
+        <td><span th:text="${lastName}"></span></td>
+    </tr>
+    <tr>
+        <td><strong>Age:</strong></td>
+        <td><span th:text="${age}"></span></td>
+    </tr>
+    <tr>
+        <td><strong>Gender:</strong></td>
+        <td><span th:text="${gender}"></span></td>
+    </tr>
+    <tr>
+        <td><strong>Department:</strong></td>
+        <td><span th:text="${dept}"></span></td>
+    </tr>
+    <tr>
+        <td><strong>Joining Date:</strong></td>
+        <td><span th:text="${joiningDate}"></span></td>
+    </tr>
+    <tr>
+        <td><strong>Salary:</strong></td>
+        <td><span th:text="${salary}"></span></td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;<a th:href="@{registration_form}"
+                                 class="btn btn-success"> <i class="fa fa-arrow-circle-o-left"></i>&nbsp;Add
+            new employee
+        </a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
